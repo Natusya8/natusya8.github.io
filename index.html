@@ -1,0 +1,603 @@
+
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Інформатика - ДистОсвіта</title>
+    <link rel="icon" href="https://dystosvita.org.ua/pluginfile.php/1/theme_adaptable/favicon/1654335331/unnamed.png" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Інформатика - ДистОсвіта" />
+<link rel="stylesheet" type="text/css" href="https://dystosvita.org.ua/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://dystosvita.org.ua/theme/styles.php/adaptable/1654335331_1/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/dystosvita.org.ua","sesskey":"j7sYkvUvUy","sessiontimeout":"28800","sessiontimeoutwarning":"1200","themerev":"1654335331","slasharguments":1,"theme":"adaptable","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1654335331","admin":"admin","svgicons":true,"usertimezone":"Europe\/Kiev","contextid":2,"langrev":1655038122,"templaterev":"1654335331"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/dystosvita.org.ua\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/dystosvita.org.ua\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/dystosvita.org.ua\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/dystosvita.org.ua\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/dystosvita.org.ua\/theme\/yui_combo.php?m\/1654335331\/","combine":true,"comboBase":"https:\/\/dystosvita.org.ua\/theme\/yui_combo.php?","ext":false,"root":"m\/1654335331\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_checklist-linkselect":{"requires":["node","event-valuechange"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-format_grid-gridkeys":{"requires":["event-nav-keys"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/dystosvita.org.ua\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/dystosvita.org.ua\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1654335331\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/dystosvita.org.ua\/lib\/javascript.php\/1654335331\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/dystosvita.org.ua\/lib\/javascript.php\/1654335331\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+    <!-- CSS print media -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:site" value="Інформатика - ДистОсвіта" />
+    <meta name="twitter:title" value="Інформатика - ДистОсвіта" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Інформатика - ДистОсвіта" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta name="og:site_name" value="Інформатика - ДистОсвіта" />
+
+    <!-- Chrome, Firefox OS and Opera on Android topbar color -->
+    <meta name="theme-color" content="#3A454b" />
+
+    <!-- Windows Phone topbar color -->
+    <meta name="msapplication-navbutton-color" content="#3A454b" />
+
+    <!-- iOS Safari topbar color -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3A454b" />
+
+    </head>
+<body  id="page-site-index" class="format-site course path-site chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam dystosvita-org-ua pagelayout-frontpage course-1 context-2 notloggedin theme_adaptable two-column  header-style1 has-page-header  nomobilenavigation">
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://dystosvita.org.ua/lib/javascript.php/1654335331/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://dystosvita.org.ua/lib/javascript.php/1654335331/lib/polyfills/polyfill.js"></script>
+<script src="https://dystosvita.org.ua/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://dystosvita.org.ua/theme/jquery.php/core/jquery-3.5.1.min.js"></script>
+<script src="https://dystosvita.org.ua/theme/jquery.php/theme_adaptable/pace-min.js"></script>
+<script src="https://dystosvita.org.ua/theme/jquery.php/theme_adaptable/jquery-flexslider-min.js"></script>
+<script src="https://dystosvita.org.ua/theme/jquery.php/theme_adaptable/tickerme.js"></script>
+<script src="https://dystosvita.org.ua/theme/jquery.php/theme_adaptable/jquery-easing-min.js"></script>
+<script src="https://dystosvita.org.ua/theme/jquery.php/theme_adaptable/adaptable_v2_1_1_2.js"></script>
+<script src="https://dystosvita.org.ua/lib/javascript.php/1654335331/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<div id="page-wrapper">
+    <div id="page" class="fullin showblockicons standard">
+    <div class="customalert alert alert-dismissable adaptable-alert-info fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close" data-alertkey="Шкільне життя онлайн" data-alertindex="1"><span aria-hidden="true">&times;</span></button><i class="fa fa-info-circle fa-lg"></i>&nbsp;<p dir="ltr" style="text-align: left;">Рекомендую курс Шкільне життя онлайн на платформі Prometheus&nbsp;<a href="https://courses.prometheus.org.ua/courses/course-v1:EWC+SL_ONLINE101+2022_T1/about" target="_blank">https://courses.prometheus.org.ua/courses/course-v1:EWC+SL_ONLINE101+2022_T1/about</a></p></div><div class="customalert alert alert-dismissable adaptable-alert-success fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close" data-alertkey="Опитування" data-alertindex="2"><span aria-hidden="true">&times;</span></button><i class="fa fa-bullhorn fa-lg"></i>&nbsp;<p dir="ltr" style="text-align: left;">Заповніть опитувальник про користування сайтом в 2021-2022 навчальному році <a href="https://forms.gle/KFzYJrx9kQr7VkhK8" target="_blank">https://forms.gle/KFzYJrx9kQr7VkhK8</a><br></p></div><header id="adaptable-page-header-wrapper">
+    <div id="above-header" class="stickything">
+        <div class="container">
+            <nav class="navbar navbar-expand btco-hover-menu">
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto my-auto">
+                        <li class="pull-left">
+                            <ul class="navbar-nav mr-auto"></ul>
+                        </li>
+
+                        <li class="my-auto m-1"><span class="nav-link" id="openoverlaymenu">
+        <i class="fa fa-link fa-lg"></i><span class="linksdesc"></span>
+    </span>
+
+
+<div id="conditionalmenu" class="overlaymenu">
+    <span id="overlaymenuclose" class="btn btn-default pull-right overlayclosebtn">
+        <i class="fa fa-close"></i>
+    </span>
+    <div class="overlay-content">
+        <div class="row-fluid">
+                <div class="col-4">
+                    <ul class="overlaylist">
+                        <li class="level-0">
+                            <a href="javascript:void(0)" title=Відео>Відео</a>
+                        </li>                        <li class="level-1">
+                            <a href="javascript:void(0)" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/ij4vIKByuvw" title=>ДистОсвіта на уроках</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/4X4NjwdLT3w" title=>Програмування в курсі інформатики</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/UzLLHIMiX-4" title=>Дискусії на уроках інформатики</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/pji_Tp8zBNw" title=>Креативне програмування</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/wpCmcBMQucw" title=>Цифрове громадянство</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/SqNntUSdYoc" title=>Вчити(ся) вчитися</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/f3PtgVbpCT8" title=>Технічні особливості організації дистанційного навчання</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/VKj_USw0V4g" title=>Ефективне навчання в дистанційному режимі</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/nMbscSXL0ao" title=>Дистанційний урок мрії</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/ZwWBzFXoWbw" title=>Оцінювання результатів навчання</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/8dPtourHVuI" title=>Освітня магія</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/prvpma1TSQ4" title=>Цифровий вимір громадянської компетентності у Новій українській школі</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="https://youtu.be/SJic_5PgDqs?t=4473" title=>Навчання без обмежень</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="overlaylist">
+                        <li class="level-0">
+                            <a href="javascript:void(0)" title=Інструкції>Інструкції</a>
+                        </li>                        <li class="level-1">
+                            <a href="http://dystosvita.org.ua/mod/page/view.php?id=233" title=> Безпечна робота з комп'ютером</a>
+                        </li>                        <li class="level-2">
+                            <a href="http://dystosvita.org.ua/mod/page/view.php?id=238" title=> Як зареєструватись на сайті</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="http://dystosvita.org.ua/mod/page/view.php?id=239" title=> Робота Учня на ДистОсвіті</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="http://dystosvita.org.ua/mod/page/view.php?id=242" title=> Про проект ДистОсвіта</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="overlaylist">
+                        <li class="level-0">
+                            <a href="javascript:void(0)" title=Корисні посилання>Корисні посилання</a>
+                        </li>                        <li class="level-1">
+                            <a href="javascript:void(0)" title=>Методичні рекомендації</a>
+                        </li>                        <li class="level-2">
+                            <a href="https://nus.org.ua/wp-content/uploads/2020/06/GRYF_Metodychni_rekomendatsii-_dystantsiy-na_osvita_razvoroty.pdf" title=> з організації дистанційного навчання</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="http://dystosvita.org.ua/mod/page/view.php?id=237" title=> з викладання інформатики у 2020-2021 н.р.</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="http://dystosvita.org.ua/mod/page/view.php?id=236" title=> з викладання інформатики у 2019-2020 н.р.</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="http://dystosvita.org.ua/mod/page/view.php?id=235" title=> з викладання інформатики у 2018-2019 н.р.</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="level-2">
+                            <a href="http://dystosvita.org.ua/mod/page/view.php?id=241" title=> Додаткові ресурси</a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                        <li class="">
+                            <a href="" title=></a>
+                        </li>                    </ul>
+                </div>
+        </div>
+    </div>
+</div></li>
+
+                        <li class="nav-item navbarsearchsocial mx-md-1 my-auto d-md-block d-lg-none my-auto">
+                            <div id="searchinput-navbar-62aa2e0d11e8262aa2e0cedda914" class="simplesearchform">
+    <div class="collapse" id="searchform-navbar">
+        <form autocomplete="off" action="https://dystosvita.org.ua/course/search.php" method="get" accept-charset="utf-8" class="mform form-inline searchform-navbar">
+                <input type="hidden" name="context" value="2">
+            <div class="input-group">
+                <label for="searchinput-62aa2e0d11e8262aa2e0cedda914">
+                    <span class="sr-only">Course search</span>
+                </label>
+                    <input type="text"
+                       id="searchinput-62aa2e0d11e8262aa2e0cedda914"
+                       class="form-control withclear"
+                       placeholder="Course search"
+                       aria-label="Course search"
+                       name="q"
+                       data-region="input"
+                       autocomplete="off"
+                    >
+                    <a class="btn btn-close"
+                        data-action="closesearch"
+                        data-toggle="collapse"
+                        href="#searchform-navbar"
+                        role="button"
+                    >
+                        <i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i>
+                        <span class="sr-only">Close</span>
+                    </a>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-submit" data-action="submit">
+                        <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                        <span class="sr-only">Course search</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <a
+        class="btn btn-open"
+        data-toggle="collapse"
+        data-action="opensearch"
+        href="#searchform-navbar"
+        role="button"
+        aria-expanded="false"
+        aria-controls="searchform-navbar"
+        title="Toggle search input"
+    >
+        <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+        <span class="sr-only">Toggle search input</span>
+    </a>
+</div>
+                        </li>
+
+
+                        <li class="nav-item dropdown ml-2 my-auto"><li class="nav-item dropdown my-auto"><a href="https://dystosvita.org.ua/" class="nav-link dropdown-toggle my-auto" role="button" id="langmenu0" aria-haspopup="true" aria-expanded="false" aria-controls="dropdownlangmenu0" data-target="https://dystosvita.org.ua/" data-toggle="dropdown" title="Language"><i class="fa fa-globe fa-lg"></i><span class="langdesc">English ‎(en)‎</span></a><ul role="menu" class="dropdown-menu" id="dropdownlangmenu0" aria-labelledby="langmenu0"><li><a title="English ‎(en)‎" class="dropdown-item" href="https://dystosvita.org.ua/?lang=en">English ‎(en)‎</a></li><li><a title="Українська ‎(uk)‎" class="dropdown-item" href="https://dystosvita.org.ua/?lang=uk">Українська ‎(uk)‎</a></li></ul></li></li>
+
+                        
+                        <li class="nav-item">
+                            <form id="pre-login-form" class="form-inline my-2 my-lg-0" action="https://dystosvita.org.ua/login/index.php" method="post">
+    <input type="hidden" name="logintoken" value="S132Q0jcTF0IqLCrNvflLRoSvaan42nL"/>
+    <input type="text" name="username" placeholder="Username" size="11">
+    <input type="password" name="password" placeholder="Password" size="11">
+    <button class="btn-login" type="submit">Log in</button>
+</form>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="page-header" class="container d-none d-lg-block">
+        <div class="row d-flex justify-content-start align-items-center h-100 ">
+            <div class="col-lg-8 p-0">
+                <div class="bd-highlight">
+                    
+                    <div id="sitetitle" class="bd-highlight d-none d-lg-inline-block"><h1>Інформатика - ДистОсвіта</h1></div>
+                </div>
+                <div id="course-header">
+                    
+                </div>
+            </div>
+            <div class="col-lg-4">
+                    <div class="headersearch pagelayoutoriginal d-none d-lg-block float-right">
+    <div id="searchinput-navbar-62aa2e0d122b562aa2e0cedda915" class="simplesearchform">
+    <div class="collapse" id="searchform-navbar">
+        <form autocomplete="off" action="https://dystosvita.org.ua/course/search.php" method="get" accept-charset="utf-8" class="mform form-inline searchform-navbar">
+                <input type="hidden" name="context" value="2">
+            <div class="input-group">
+                <label for="searchinput-62aa2e0d122b562aa2e0cedda915">
+                    <span class="sr-only">Course search</span>
+                </label>
+                    <input type="text"
+                       id="searchinput-62aa2e0d122b562aa2e0cedda915"
+                       class="form-control withclear"
+                       placeholder="Course search"
+                       aria-label="Course search"
+                       name="q"
+                       data-region="input"
+                       autocomplete="off"
+                    >
+                    <a class="btn btn-close"
+                        data-action="closesearch"
+                        data-toggle="collapse"
+                        href="#searchform-navbar"
+                        role="button"
+                    >
+                        <i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i>
+                        <span class="sr-only">Close</span>
+                    </a>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-submit" data-action="submit">
+                        <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+                        <span class="sr-only">Course search</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <a
+        class="btn btn-open"
+        data-toggle="collapse"
+        data-action="opensearch"
+        href="#searchform-navbar"
+        role="button"
+        aria-expanded="false"
+        aria-controls="searchform-navbar"
+        title="Toggle search input"
+    >
+        <i class="icon fa fa-search fa-fw " aria-hidden="true"  ></i>
+        <span class="sr-only">Toggle search input</span>
+    </a>
+</div>
+</div>
+            </div>
+
+        </div>
+    </div>
+
+
+</header><div class="container slidewrap d-none d-lg-block">
+            <div id="main-slider" class="flexslider">
+            <ul class="slides"><li><a href="https://oksanapasichnyk.wordpress.com/2013/06/08/%d0%b7%d0%bc%d1%96%d1%88%d0%b0%d0%bd%d0%b5-%d0%bd%d0%b0%d0%b2%d1%87%d0%b0%d0%bd%d0%bd%d1%8f/"><img src="//dystosvita.org.ua/pluginfile.php/1/theme_adaptable/p1/1654335331/planning_upd.jpg" alt="p1"/><div class="flex-caption"><h3><span>Змішане навчання</span></h3></div></a></li><li><a href="https://oksanapasichnyk.wordpress.com/"><img src="//dystosvita.org.ua/pluginfile.php/1/theme_adaptable/p2/1654335331/Untitled-17_upd.jpg" alt="p2"/><div class="flex-caption"><h3>Інформатика у школі</h3></div></a></li><li><a href="https://oksanapasichnyk.wordpress.com/2020/08/14/softskills/"><img src="//dystosvita.org.ua/pluginfile.php/1/theme_adaptable/p3/1654335331/ss_upd.jpg" alt="p3"/><div class="flex-caption"><h3>SoftSkills на інформатиці</h3></div></a></li><li><a href="https://nus.org.ua/wp-content/uploads/2020/06/GRYF_Metodychni_rekomendatsii-_dystantsiy-na_osvita_razvoroty.pdf"><img src="//dystosvita.org.ua/pluginfile.php/1/theme_adaptable/p4/1654335331/blog_upd.jpg" alt="p4"/><div class="flex-caption"><h3>Дистанційне навчання в школі</h3></div></a></li></ul></div></div>    <div id="frontblockregion" class="container">
+        <div class="row">
+            <div class="my-1 col-md-12"><aside id="block-region-frnt-market-a" class="block-region-front block-region" data-blockregion="frnt-market-a" data-droptarget="1"><section id="inst69" class="block_html block mb-3" role="complementary" data-block="html" data-instanceid="69" aria-label="HTML"><div class="content"><div class="block_action notitle"></div><div class="no-overflow"><div class="vstup1">
+    <p>Вітаємо на сайті дистанційного вивчення інформатики. <strong>Зареєструйтесь</strong>, <strong>оберіть </strong>курс, який <strong>бажаєте </strong>вивчати, <strong>запишіться </strong>на нього, та <strong>отримайте </strong>доступ до навчальних матеріалів, завдань та тестів.&nbsp;</p>
+</div>
+
+<p><strong>Інформатика </strong>- це наука, що вивчає методи та засоби роботи з <strong>інформацією</strong>. В сучасному світі це, звісно ж, передбачає використання <strong>комп'ютерів </strong>та відповідних <strong>технологій</strong>.<br></p>
+<p>На нашому сайті можна вивчити усі теми шкільної інформатики, як з розділу <strong>інформаційних технологій</strong>, так і <strong>програмування</strong>. Матеріали можна використовувати як для повністю <strong>дистанційних </strong><strong>уроків</strong>, так і <strong>змішаного </strong>навчання,
+    поєднуючи із власними розробками та додатковими ресурсами. Здобуті знання, вміння та навички допоможуть нашим учням&nbsp; стати повноправними учасниками <strong>інформаційного суспільства</strong>, а також його <strong>творцями </strong>у найрізноманітніших галузях.<br></p>
+<p>Сучасні методики та технології навчання підтримуються системою <strong>Moodle</strong>, яка забезпечує цілісне освітнє середовище поширення навчальних матеріалів, обміну виконаними завданнями із забезпеченням зворотного зв’язку, а також засоби спільної роботи та
+    співпраці.<br></p><p><strong>Інформатична освіта в Новій українській школі</strong> отримує новий поштовх для того, щоб бути інноваційним, захоплюючим, пізнавальним предметом для всіх учнів.</p>
+<p>Вже зараз на нашому сайті навчається <strong>більше 20000 користувачів</strong>. Приєднуйтесь і вивчайте та викладайте інформатику по-новому!<br></p>
+<p style="text-align: center;"><strong>Навчаймося разом!</strong><br></p>
+<p></p></div></div></section></aside></div><div class="my-1 col-md-12"><aside id="block-region-frnt-market-b" class="block-region-front block-region" data-blockregion="frnt-market-b" data-droptarget="1"><section id="inst68" class="block_html block mb-3" role="complementary" data-block="html" data-instanceid="68" aria-label="HTML"><div class="content"><div class="block_action notitle"></div><div class="no-overflow"><div style="text-align:center; "><br>
+    <table style="border-collapse: separate; border-spacing: 10px; margin-left:auto;  margin-right:auto;">
+        <tbody>
+            <tr>
+                <td width="25%"><img src="https://dystosvita.org.ua/pluginfile.php/830/block_html/content/materials.png" alt="" width="200" height="200" role="presentation" class="img-fluid atto_image_button_text-bottom" style="font-size: 0.9375rem;"></td>
+                <td width="25%"><img src="https://dystosvita.org.ua/pluginfile.php/830/block_html/content/interact.png" alt="" width="200" height="200" role="presentation" style="font-size: 0.9375rem;" class="img-fluid atto_image_button_text-bottom"></td>
+                <td width="25%"><img src="https://dystosvita.org.ua/pluginfile.php/830/block_html/content/practice1.png" alt="" width="200" height="200" role="presentation" style="font-size: 0.9375rem;" class="img-fluid atto_image_button_text-bottom"></td>
+                <td width="25%"><img src="https://dystosvita.org.ua/pluginfile.php/830/block_html/content/test1.png" alt="" width="200" height="200" role="presentation" style="font-size: 0.9375rem;" class="img-fluid atto_image_button_text-bottom"></td>
+            </tr>
+            <tr style="vertical-align: text-top;">
+                <td>Навчальні матеріали: презентації, статті, уроки, посилання та відео-ролики відповідно до теми заняття.&nbsp;<br>Саме такими мають бути сучасні електронні підручники</td>
+                <td>Інтерактивні завдання, вправи та тренажери - ними можна скористатись як для класної, так і самостійної чи домашньої роботи</td>
+                <td>Практичні роботи із можливістю перевірки та коментування вчителем. Переважна більшість практичних робіт містить різнорівневі та творчі завдання</td>
+                <td>Онлайн-тестування з миттєвою перевіркою. Тести містять запитання різних типів та мультимедійні об'єкти, вимагаючи не механічного відтворення, а креативного застосування знань</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+</div></div></div></section></aside></div>        </div>
+    </div>
+    <div class="container outercont">
+    <div id="page-content" class="row flex-row">
+        <div id="page-navbar" class="col-12">
+            <nav class="breadcrumb-button"></nav>
+        </div>
+
+        <section id="region-main" class="col-9">
+            <span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><div class="box generalbox sitetopic"><div class="no-overflow"><p>У дистанційних курсах сайту ДистОсвіта ви знайдете все, що потрібно для проведення цікавого, сучасного та ефективного уроку інформатики у школі чи поза її межами!</p>
+<p>Всі курси сайту відповідають <strong>оновленим навчальним програмам</strong>, і дозволяють поєднувати окремі складові різних курсів для формування індивідуальних траєкторій навчання. Відповідно до змін у програмах,&nbsp; визначені <strong>очікувані результати навчання</strong>:
+    знаннєві, діяльнісні та ціннісні. До кожної теми додано анкету з обліку <strong>набуття компетентностей</strong>.</p>
+<p>З новинок 2021-2022 навчального року - <strong>електронні презентації-конспекти</strong> для індивідуальної роботи учнів, шукайте в курсах 6-10 класу! Створюйте власну копію, змінюйте її за потреби і поширюйте серед своїх учнів - чудове рішення на випадок дистанційного навчання.</p>
+<p>Успіхів!</p>
+<p></p>
+
+<p style="text-align: center;">Курси оновлено до 2021-2022 навчального року.<br></p>
+<p style="text-align: center;">РОБОТА ІЗ КУРСАМИ ЦЬОГО САЙТУ БУЛА І Є&nbsp;<strong><span style="color:red;"><strong>БЕЗКОШТОВНОЮ</strong></span>!<br></strong>
+</p>
+<p></p>
+<p style="text-align: center;"><strong>З усіма відкритими курсами сайту можна працювати в режимі Гостя - всі матеріали доступні для ознайомлення та опрацювання.</strong></p>
+<p style="text-align: center;">Створення облікових записів учнів та вчителів відбувається&nbsp;<strong style="font-size: 0.9375rem;">самостійною </strong>стандартною реєстрацією.<br></p></div><ul class="section img-text"></ul></div><a class="skip-block skip aabtn" href="#skipavailablecourses">Skip available courses</a><div id="frontpage-available-course-list"><h2>Available courses</h2><div class="courses frontpage-course-list-all"><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/96/course/overviewfiles/new2klas.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=4"><h3 class="">Інформатика 2 клас НУШ (ЯДС)</h3></a><div class="summary"><span title="Інформатична освітня галузь в 2 класі входить у предмет Я досліджую світ (інтегрований предмет мовно-літературної, математичної, природничої, технологічної, інформатичної, соціальної і здоровʹязбережної, громадянської та історичної освітніх галузей). Це означає тематичне узгодження уроків інформатики з місячними темами курсу.">Інформатична освітня галузь в 2 класі входить у предмет Я досліджую...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=4">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=4"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/65/course/overviewfiles/new3klas.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=3"><h3 class="">Інформатика 3 клас (НУШ)</h3></a><div class="summary"><span title="У третьому класі Нової української школи інформатика є окремим предметом освітньої програми.">У третьому класі Нової української школи інформатика є окремим пред...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=3">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=3"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/1586/course/overviewfiles/inf4_NUS.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=24"><h3 class="">Інформатика 4 клас (НУШ)</h3></a><div class="summary"><span title="У четвертому класі Нової української школи інформатика є окремим предметом освітньої програми.">У четвертому класі Нової української школи інформатика є окремим пр...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=24">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=24"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/132/course/overviewfiles/new5klas.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=6"><h3 class="">Інформатика 5 клас</h3></a><div class="summary"><span title="Оновлена програма з інформатики для 5–9 класів&amp;nbsp;Зміст навчального матеріалу для 5 класу:Інформаційні процеси та системиМережеві технології та ІнтернетОпрацювання текстових данихАлгоритми &amp;nbsp;та програми">Оновлена програма з інформатики для 5–9 класів&nbsp;Зміст навчально...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=6">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=6"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/205/course/overviewfiles/new6klas.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=7"><h3 class="">Інформатика 6 клас</h3></a><div class="summary"><span title="Оновлена програма з інформатики для 5–9 класів&amp;nbsp;Зміст навчального матеріалу для 6 класу:Комп&#039;ютерна графікаКомп&#039;ютерні презентаціїАлгоритми &amp;nbsp;та програми">Оновлена програма з інформатики для 5–9 класів&nbsp;Зміст навчально...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=7">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=7"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/532/course/overviewfiles/new7klas.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=10"><h3 class="">Інформатика 7 клас</h3></a><div class="summary"><span title="Оновлена програма з інформатики для 5–9 класів&amp;nbsp;розрахована на учнів, які розпочали вивчення інформатики у 2 класі.Теми дистанційного курсу інформатики 7 класу:Служби ІнтернетуОпрацювання табличних данихАлгоритми та програми">Оновлена програма з інформатики для 5–9 класів&nbsp;розрахована на ...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=10">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=10"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/614/course/overviewfiles/new8klas.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=11"><h3 class="">Інформатика 8 клас</h3></a><div class="summary"><span title="Оновлена програма з інформатики для 5–9 класів&amp;nbsp;розрахована на учнів, які розпочали вивчення інформатики у 2 класіТеми дистанційного курсу інформатики 8 класу:Кодування даних та апаратне забезпеченняОпрацювання текстових данихСтворення та публікація веб-ресурсівОпрацювання мультимедійних об’єктівАлгоритми та програми">Оновлена програма з інформатики для 5–9 класів&nbsp;розрахована на ...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=11">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=11"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/728/course/overviewfiles/new9klas.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=12"><h3 class="">Інформатика 9 клас</h3></a><div class="summary"><span title="Оновлена програма з інформатики для 5–9 класів&amp;nbsp;розрахована на учнів, які розпочали вивчення інформатики у 2 класіТеми дистанційного курсу інформатики 9 класу:Програмне забезпечення та інформаційна безпека3D-графікаОпрацювання табличних данихБази даних. Системи керування базами данихАлгоритми та програми">Оновлена програма з інформатики для 5–9 класів&nbsp;розрахована на ...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=12">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=12"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/843/course/overviewfiles/new10klas.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=15"><h3 class="">Інформатика 10 клас (базовий модуль)</h3></a><div class="summary"><span title="Основою навчання інформатики в 10-11 класах є базовий модуль, зміст якого може бути розширений за рахунок вибіркових модулів. Базовий модуль, на вивчення якого відводиться 35 годин, завершує формування в учнів предметних і ключових компетентностей щодо використання сучасних інформаційно-комунікаційних технологій на рівні, визначеному чинним Державним стандартом базової і повної загальної середньої освіти. Цей модуль є мінімально допустимою нерозривною структурною одиницею програми, рознесення вивчення базового модуля на два роки не допускається.Теми курсуІнформаційні технології в суспільствіМоделі і моделювання. Аналіз та візуалізація данихСистеми керування базами данихМультимедійні та&amp;nbsp; гіпертекстові документи">Основою навчання інформатики в 10-11 класах є базовий модуль, зміст...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=15">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=15"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/918/course/overviewfiles/new_python.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=16"><h3 class="">Програмування  на Python</h3></a><div class="summary"><span title="Цей курс призначено для ознайомлення з програмуванням мовою Python.&amp;nbsp;На відміну від більшості підручників з програмування, в цьому курсі переважно розглядаються задачі практичного характеру, доступні для розв&#039;язання учнями 8-9 класів.&amp;nbsp;Курс продовжується низкою проектів з використанням графічного інтерфейсу користувача, а також охоплює теми використання структур даних та теорії алгоритмів (графів).&amp;nbsp;Таким чином цей курс відповідає чинній програмі профільного вивчення програмування і може використовуватись у 10-11 
+
+класах інформаційно-технологічного профілю.">Цей курс призначено для ознайомлення з програмуванням мовою Python....</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=16">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=16"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/1097/course/overviewfiles/kp.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=17"><h3 class="">Креативне програмування у Processing</h3></a><div class="summary"><span title="Processing - це відкрита мова програмування, що базується на Java. Надає легкий і швидкий інструментарій для людей, які хочуть програмувати зображення, анімації та інтерфейси. Курс пропонується як вибірковий модуль у старших класах профільної школи.Теми курсуЦифрове мистецтво та творчістьГрафічні побудови та взаємодіїФункціїОб’єкти та класиМультимедіаІнтерфейс програмного продуктуДистанційний курс відповідає навчальній програмі вибіркового модулю «Креативне програмування»&amp;nbsp;https://sites.google.com/view/new-site-for-lesson1011/креативне-програмування">Processing - це відкрита мова програмування, що базується на Java. ...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=17">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=17"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/1172/course/overviewfiles/gd.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=18"><h3 class="">Графічний дизайн</h3></a><div class="summary"><span title="Вибіркові модулі для розширення курсу інформатики учитель добирає, 
+відповідно до  профілю навчання навчального закладу, запитів, 
+індивідуальних інтересів і здібностей учнів, регіональних особливостей, 
+матеріально-технічної бази та наявного програмного забезпечення.Модуль &quot;Графічний дизайн&quot; включає наступні теми:Графічний дизайн як засіб візуальної комунікації Растрова графікаОснови композиції та дизайну Векторна графікаГрафічний дизайн у поліграфіїДистанційний курс відповідає навчальній програмі вибіркового модулю «Графічний дизайн»&amp;nbsp;https://sites.google.com/view/new-site-for-lesson1011/графічний-дизайн">Вибіркові модулі для розширення курсу інформатики учитель добирає, ...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=18">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=18"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/1282/course/overviewfiles/new_web1.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=19"><h3 class="">Веб-технології</h3></a><div class="summary"><span title="Вибіркові модулі для розширення курсу інформатики учитель добирає, відповідно до  профілю навчання навчального закладу, запитів, індивідуальних інтересів і здібностей учнів, регіональних особливостей, матеріально-технічної бази та наявного програмного забезпечення.Модуль &quot;Веб-технології&quot; включає наступні теми:Напрямки та інструменти веб-дизайнуПроектування та верстка веб-сторінокГрафіка та мультимедіа для веб-середовищаВеб-програмуванняОснови дизайну та просування веб-сайтуДистанційний курс відповідає навчальній програмі вибіркового модулю «Веб-технології»&amp;nbsp;https://sites.google.com/view/new-site-for-lesson1011/веб-технології">Вибіркові модулі для розширення курсу інформатики учитель добирає, ...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=19">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=19"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/1371/course/overviewfiles/new_bd.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=20"><h3 class="">Бази даних</h3></a><div class="summary"><span title="Вибіркові модулі для розширення курсу інформатики учитель добирає, 
+відповідно до  профілю навчання навчального закладу, запитів, 
+індивідуальних інтересів і здібностей учнів, регіональних особливостей, 
+матеріально-технічної бази та наявного програмного забезпечення.Модуль &quot;Бази даних&quot; включає наступні теми:Проектування моделі бази данихСтворення реляційної бази данихДистанційний курс відповідає навчальній програмі вибіркового модулю «Бази даних»&amp;nbsp;https://sites.google.com/view/new-site-for-lesson1011/бази-даних">Вибіркові модулі для розширення курсу інформатики учитель добирає, ...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=20">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=20"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/1405/course/overviewfiles/c%2B%2B.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=21"><h3 class="">Програмування на С++</h3></a><div class="summary"><span title="Курс призначено для учнів, які навчаються у класах інформаційно-технологічного профілю та працюють у середовищі програмування Visual Studio C++.Передбачається, що учні раніше вивчали мову програмування Pascal, тобто знають основи алгоритмізації та основний синтаксис.">Курс призначено для учнів, які навчаються у класах інформаційно-тех...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=21">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=21"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/1439/course/overviewfiles/all.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=22"><h3 class="">Цифрове громадянство</h3></a><div class="summary"><span title="Цей курс створено для пілотного проекту освіти з цифрового громадянства (2019-2020 н.р.).Школи ознайомляться з 10 сферами освіти з цифрового громадянства та дослідять навчальні підходи, які заохочують ефективне використання цифрових технологій, водночас розвиваючи поняття громадянства, що базується на повазі до прав людини та демократичній культурі.">Цей курс створено для пілотного проекту освіти з цифрового громадян...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=22">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=22"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/1500/course/overviewfiles/Untitled-1.jpg&#039;);"></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=23"><h3 class="">Digital Kids</h3></a><div class="summary"><span title="Digital Kids - курс креативного програмування та обчислювального мислення.&amp;nbsp;Доступ лише для учасників клубу Шалених Математиків">Digital Kids - курс креативного програмування та обчислювального ми...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=23">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=23"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div><div class="col-xs-12 col-sm-3 panel panel-default coursebox hover"><div class="panel-body clearfix"><div class="cimbox" style="background-image: url(&#039;https://dystosvita.org.ua/pluginfile.php/15707/course/overviewfiles/arduino.png&#039;);"></div><div class="enrolmenticons"><i class="icon fa fa-unlock-alt fa-fw "  title="Guest access" role="img" aria-label="Guest access"></i></div><div class="coursebox-content"><a href="https://dystosvita.org.ua/course/view.php?id=25"><h3 class="">Програмування Arduino</h3></a><div class="summary"><span title="У цьому курсі можна ознайомитись із програмуванням на базі Arduino, виконуючи прості проекти за наведеними зразками.Учасники курсу повинні мати базові знання з алгоритмізації, бути знайомими з поняттями алгоритму, програми, середовища програмування, змінної, конструкцій галуження та циклу.&amp;nbsp;Оскільки перші проекти створюються у середовищі Scratch4Arduino, знайомство із середовищем та принципами роботи у Scratch буде корисним.&amp;nbsp;">У цьому курсі можна ознайомитись із програмуванням на базі Arduino,...</span><ul class="teachers"><li><a href="https://dystosvita.org.ua/user/view.php?id=3&amp;course=25">Teacher: Оксана Пасічник</a></li></ul></div></div><div class="boxfooter"></div><a class=" coursebtn submit btn btn-info btn-sm" href="https://dystosvita.org.ua/course/view.php?id=25"><span class="get_stringlink">Course <span class="fa fa-chevron-right"></span></span></a></div></div></div></div><span class="skip-block-to" id="skipavailablecourses"></span><br /></div>        </section>
+        <aside id="block-region-side-post" class="col-3 d-print-none  block-region" data-blockregion="side-post" data-droptarget="1"><a class="skip skip-block" id="fsb-1" href="#sb-1">Skip Опитування</a><section id="inst14167" class="block_html block mb-3" role="complementary" data-block="html" data-instanceid="14167" aria-labelledby="instance-14167-header"><div class="header"><div class="title"><div class="block_action"></div><h2 class="d-inline" id="instance-14167-header">Опитування</h2><div class="block-controls float-right"></div></div></div><div class="content"><div class="no-overflow"><p dir="ltr" style="text-align: left;"><a href="https://forms.gle/KFzYJrx9kQr7VkhK8" target="_blank"><img src="https://dystosvita.org.ua/pluginfile.php/29502/block_html/content/httpsDystOsvita.Org.Ua.png" alt="" width="250" height="210" role="presentation" class="img-fluid atto_image_button_text-bottom"></a><br></p></div></div></section><span class="skip-block-to" id="sb-1"></span><section id="inst76" class="block_html block mb-3" role="complementary" data-block="html" data-instanceid="76" aria-label="HTML"><div class="content"><div class="block_action notitle"></div><div class="no-overflow"><h5 style="text-align: center;"><a href="http://oksanapasichnyk.wordpress.com/" target="_blank" style="font-size: 14px;">Практика&nbsp;викладання інформатики у школі від Оксани Пасічник</a><br></h5>
+<p style="text-align: center;"><a href="http://oksanapasichnyk.wordpress.com/" target="_blank"><img src="https://dystosvita.org.ua/pluginfile.php/840/block_html/content/blog2020.png" alt="" width="200" height="200" role="presentation" class="img-fluid atto_image_button_text-bottom"></a><br></p>
+<p style="text-align: center;">У блозі я ділюсь своїм досвідом викладання інформатики у ліцеї "Сихівський",&nbsp; а також супутніми міркуваннями про освіту, інформатику та цифрові технології.</p>
+<p style="text-align: center;">Дізнавайтесь про те, як створювати дистанційні курси, такі як на цьому сайті; як готувати електронні ресурси для уроків інформатики, та не тільки; як організовувати змішане навчання у школі та багато іншого, пов'язаного з освітою та технологіями.<br></p>
+<p style="text-align: center;"><br></p>
+<p style="text-align: center;"><a href="https://docs.google.com/spreadsheet/ccc?key=0AnvJMsCgawIAdHVYdl9LQmJ5cmhPdTUtcGloNzZxZVE&amp;amp;usp=sharing" target="_blank">Календарне планування з інформатики для 2-11 класів, курсів за вибором</a>&nbsp;на <b>2021-2022 навчальний рік</b>:</p>
+<p style="text-align: center;"><a href="https://docs.google.com/spreadsheets/d/10XZJVC92cC7qgEW4F6PFcZXkKjOlyuFoDSBPxhN_vYI/edit?usp=sharing" target="_blank"><img src="https://dystosvita.org.ua/pluginfile.php/840/block_html/content/planning2122.png" alt="" width="200" height="200" role="presentation" class="img-fluid atto_image_button_text-bottom"></a><br></p>
+<p style="text-align: center;">Отримайте календарне планування з усіх курсів інформатики від 2 по 11 клас, курси за вибором, профільне навчання, рівень стандарту та академічний рівень - <a href="https://docs.google.com/spreadsheets/d/10XZJVC92cC7qgEW4F6PFcZXkKjOlyuFoDSBPxhN_vYI/edit?usp=sharing" target="_blank">оновлено для 2021-2022 навчального року</a>, з урахуванням нових програм НУШ&nbsp;<br></p></div></div></section><a class="skip skip-block" id="fsb-5" href="#sb-5">Skip Navigation</a><section id="inst20" class="block_navigation block mb-3" role="navigation" data-block="navigation" data-instanceid="20" aria-labelledby="instance-20-header"><div class="header"><div class="title"><div class="block_action"></div><h2 class="d-inline" id="instance-20-header">Navigation</h2><div class="block-controls float-right"></div></div></div><div class="content"><ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch current_branch" role="treeitem" aria-expanded="true" aria-owns="random62aa2e0cedda92_group" data-collapsible="false" aria-labelledby="random62aa2e0cedda91_label_1_1"><p class="tree_item branch active_tree_node canexpand navigation_node"><a tabindex="-1" id="random62aa2e0cedda91_label_1_1" href="https://dystosvita.org.ua/">Home</a></p><ul id="random62aa2e0cedda92_group" role="group"><li class="type_activity depth_2 item_with_icon" role="treeitem" aria-labelledby="random62aa2e0cedda93_label_2_3"><p class="tree_item hasicon" id="expandable_branch_40_231"><a tabindex="-1" id="random62aa2e0cedda93_label_2_3" title="Glossary" href="https://dystosvita.org.ua/mod/glossary/view.php?id=231"><img class="icon navicon" alt="Glossary" title="Glossary" src="https://dystosvita.org.ua/theme/image.php/adaptable/glossary/1654335331/icon" /><span class="item-content-wrap">Натхнення</span></a></p></li><li class="type_activity depth_2 item_with_icon" role="treeitem" aria-labelledby="random62aa2e0cedda93_label_2_4"><p class="tree_item hasicon"><a tabindex="-1" id="random62aa2e0cedda93_label_2_4" title="Page" href="https://dystosvita.org.ua/mod/page/view.php?id=233"><img class="icon navicon" alt="Page" title="Page" src="https://dystosvita.org.ua/theme/image.php/adaptable/page/1654335331/icon" /><span class="item-content-wrap">Безпечна робота з комп'ютером</span></a></p></li><li class="type_activity depth_2 item_with_icon" role="treeitem" aria-labelledby="random62aa2e0cedda93_label_2_5"><p class="tree_item hasicon"><a tabindex="-1" id="random62aa2e0cedda93_label_2_5" title="Page" href="https://dystosvita.org.ua/mod/page/view.php?id=234"><img class="icon navicon" alt="Page" title="Page" src="https://dystosvita.org.ua/theme/image.php/adaptable/page/1654335331/icon" /><span class="item-content-wrap">Інформатика та ІТ у різних галузях</span></a></p></li><li class="type_activity depth_2 item_with_icon" role="treeitem" aria-labelledby="random62aa2e0cedda93_label_2_6"><p class="tree_item hasicon"><a tabindex="-1" id="random62aa2e0cedda93_label_2_6" title="Page" href="https://dystosvita.org.ua/mod/page/view.php?id=235"><img class="icon navicon" alt="Page" title="Page" src="https://dystosvita.org.ua/theme/image.php/adaptable/page/1654335331/icon" /><span class="item-content-wrap">Методичні рекомендації про викладання інформатики ...</span></a></p></li><li class="type_activity depth_2 item_with_icon" role="treeitem" aria-labelledby="random62aa2e0cedda93_label_2_7"><p class="tree_item hasicon"><a tabindex="-1" id="random62aa2e0cedda93_label_2_7" title="Page" href="https://dystosvita.org.ua/mod/page/view.php?id=236"><img class="icon navicon" alt="Page" title="Page" src="https://dystosvita.org.ua/theme/image.php/adaptable/page/1654335331/icon" /><span class="item-content-wrap">Методичні рекомендації про викладання інформатики ...</span></a></p></li><li class="type_activity depth_2 item_with_icon" role="treeitem" aria-labelledby="random62aa2e0cedda93_label_2_8"><p class="tree_item hasicon"><a tabindex="-1" id="random62aa2e0cedda93_label_2_8" title="Page" href="https://dystosvita.org.ua/mod/page/view.php?id=237"><img class="icon navicon" alt="Page" title="Page" src="https://dystosvita.org.ua/theme/image.php/adaptable/page/1654335331/icon" /><span class="item-content-wrap">Методичні рекомендації про викладання інформатики ...</span></a></p></li><li class="type_activity depth_2 item_with_icon" role="treeitem" aria-labelledby="random62aa2e0cedda93_label_2_9"><p class="tree_item hasicon"><a tabindex="-1" id="random62aa2e0cedda93_label_2_9" title="Page" href="https://dystosvita.org.ua/mod/page/view.php?id=238"><img class="icon navicon" alt="Page" title="Page" src="https://dystosvita.org.ua/theme/image.php/adaptable/page/1654335331/icon" /><span class="item-content-wrap">Як зареєструватись на сайті ДистОсвіта і почати на...</span></a></p></li><li class="type_activity depth_2 item_with_icon" role="treeitem" aria-labelledby="random62aa2e0cedda93_label_2_10"><p class="tree_item hasicon"><a tabindex="-1" id="random62aa2e0cedda93_label_2_10" title="Page" href="https://dystosvita.org.ua/mod/page/view.php?id=239"><img class="icon navicon" alt="Page" title="Page" src="https://dystosvita.org.ua/theme/image.php/adaptable/page/1654335331/icon" /><span class="item-content-wrap">Учень на ДистОсвіті</span></a></p></li><li class="type_activity depth_2 item_with_icon" role="treeitem" aria-labelledby="random62aa2e0cedda93_label_2_12"><p class="tree_item hasicon"><a tabindex="-1" id="random62aa2e0cedda93_label_2_12" title="Page" href="https://dystosvita.org.ua/mod/page/view.php?id=241"><img class="icon navicon" alt="Page" title="Page" src="https://dystosvita.org.ua/theme/image.php/adaptable/page/1654335331/icon" /><span class="item-content-wrap">Корисні посилання</span></a></p></li><li class="type_activity depth_2 item_with_icon" role="treeitem" aria-labelledby="random62aa2e0cedda93_label_2_13"><p class="tree_item hasicon"><a tabindex="-1" id="random62aa2e0cedda93_label_2_13" title="Page" href="https://dystosvita.org.ua/mod/page/view.php?id=242"><img class="icon navicon" alt="Page" title="Page" src="https://dystosvita.org.ua/theme/image.php/adaptable/page/1654335331/icon" /><span class="item-content-wrap">Про проект ДистОсвіта</span></a></p></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_0_courses" data-node-key="courses" data-node-type="0" aria-labelledby="random62aa2e0cedda93_label_2_14"><p class="tree_item branch" id="expandable_branch_0_courses"><a tabindex="-1" id="random62aa2e0cedda93_label_2_14" href="https://dystosvita.org.ua/course/index.php">Courses</a></p></li></ul></li></ul></div></section><span class="skip-block-to" id="sb-5"></span></aside><div id="showsidebaricon" title="Show / hide the sidebar"><i class="fa fa-3x fa-angle-left" aria-hidden="true"></i></div>    </div>
+
+</div>
+
+
+<footer id="page-footer" class="d-none d-lg-block">
+
+<div id="course-footer"></div><div class="container blockplace1"><div class="row"><div class="left-col col-12"><p dir="ltr" style="text-align: left;">© Оксана Пасічник<br></p></div></div><div class="row"><div class="left-col col-6"><div style="font-size:x-small">
+    <p>Матеріали сайту розміщено за ліцензією <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk" target="_blank">Creative Commons&nbsp;</a></p>
+    <p><b>Із Зазначенням Авторства — Некомерційна — Поширення На Тих Самих Умовах&nbsp;CC BY-NC-SA</b></p>
+    <p><b><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk" target="_blank"><img src="http://dystosvita.org.ua/pluginfile.php/1/theme_adaptable/adaptablemarkettingimages/0/88x31.png" alt="" width="88" height="31" role="presentation" class="img-fluid atto_image_button_text-bottom"></a><br></b></p>
+    <p>Ви можете вільно:</p>
+    <p><b>Поширювати</b> — копіювати і розповсюджувати матеріал у будь-якому вигляді чи форматі
+    </p>
+    <p><b>Змінювати</b> — реміксувати, трансформувати, і брати матеріал за основу</p>
+</div></div><div class="left-col col-6"><div style="font-size:x-small">
+    <p>На наступних умовах:</p>
+    <p><b>Зазначення Авторства</b> — Ви маєте вказати автора, розмістити посилання на ліцензію та вказати чи було внесено зміни до твору. Ви можете зробити це у будь-який розумний спосіб, але так, щоб не створювати враження стосовно того, що ліцензіар підтримує чи схвалює вас або ваше використання твору.</p>
+    <p><b>Некомерційна </b>— Ви не можете використовувати матеріал для комерційних цілей.</p>
+    <p><b>Поширення На Тих Самих Умовах</b> — Якщо ви реміксуєте, трансформуєте матеріал, засновуєте свій твір на матеріалі, ви повинні розповсюджувати свої твори на умовах тієї ж ліцензії, що й оригінал.</p>
+    <p><b>Без додаткових обмежень </b>— Ви не можете висувати додаткові умови або застосовувати технологічні засоби захисту, що обмежують права інших на дії дозволені ліцензією.</p>
+</div></div></div></div>    <div class="container">
+        <div class="row">
+            <div class="col-12 pagination-centered socialicons">
+    <a target="_blank" title="YouTube" href="https://www.youtube.com/c/%D0%94%D0%B8%D1%81%D1%82%D0%9E%D1%81%D0%B2%D1%96%D1%82%D0%B0"><i class="fa fa-youtube
+"></i></a><a target="_blank" title="Telegram" href="https://t.me/DystOsvita"><i class="fa fa-telegram
+"></i></a><a target="_blank" title="Twitter" href="https://twitter.com/dystosvita"><i class="fa fa-twitter-square
+"></i></a><a target="_blank" title="Facebook" href="https://www.facebook.com/oksana.pasichnyk"><i class="fa fa-facebook-square
+"></i></a><a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/%D0%BE%D0%BA%D1%81%D0%B0%D0%BD%D0%B0-%D0%BF%D0%B0%D1%81%D1%96%D1%87%D0%BD%D0%B8%D0%BA-1833a04a/"><i class="fa fa-linkedin-square
+"></i></a><a target="_blank" title="Email" href="mailto:dystosvita@gmail.com"><i class="fa fa-envelope-square"></i></a>            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="back-to-top"><i class="fa fa-angle-up "></i></div>
+
+</div></div><script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://dystosvita.org.ua/lib/requirejs.php/1654335331/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://dystosvita.org.ua/lib/javascript.php/1654335331/lib/jquery/jquery-3.5.1.min',
+        jqueryui: 'https://dystosvita.org.ua/lib/javascript.php/1654335331/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://dystosvita.org.ua/lib/javascript.php/1654335331/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://dystosvita.org.ua/lib/javascript.php/1654335331/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+M.util.js_pending('theme_adaptable/adaptable'); require(['theme_adaptable/adaptable'], function(amd) {amd.init(); M.util.js_complete('theme_adaptable/adaptable');});;
+M.util.js_pending('theme_adaptable/bsoptions'); require(['theme_adaptable/bsoptions'], function(amd) {amd.init({"stickynavbar":true}); M.util.js_complete('theme_adaptable/bsoptions');});;
+M.util.js_pending('theme_adaptable/drawer'); require(['theme_adaptable/drawer'], function(amd) {amd.init(); M.util.js_complete('theme_adaptable/drawer');});;
+M.util.js_pending('block_settings/settingsblock'); require(['block_settings/settingsblock'], function(amd) {amd.init("21", null); M.util.js_complete('block_settings/settingsblock');});;
+M.util.js_pending('block_navigation/navblock'); require(['block_navigation/navblock'], function(amd) {amd.init("20"); M.util.js_complete('block_navigation/navblock');});;
+
+require(
+[
+    'jquery',
+],
+function(
+    $
+) {
+    var uniqid = "62aa2e0d11e8262aa2e0cedda914";
+    var container = $('#searchinput-navbar-' + uniqid);
+    var opensearch = container.find('[data-action="opensearch"]');
+    var input = container.find('[data-region="input"]');
+    var submit = container.find('[data-action="submit"]');
+
+    submit.on('click', function(e) {
+        if (input.val() === '') {
+            e.preventDefault();
+        }
+    });
+    container.on('hidden.bs.collapse', function() {
+        opensearch.removeClass('d-none');
+        input.val('');
+    });
+    container.on('show.bs.collapse', function() {
+        opensearch.addClass('d-none');
+    });
+    container.on('shown.bs.collapse', function() {
+        input.focus();
+    });
+});
+;
+
+require(
+[
+    'jquery',
+],
+function(
+    $
+) {
+    var uniqid = "62aa2e0d122b562aa2e0cedda915";
+    var container = $('#searchinput-navbar-' + uniqid);
+    var opensearch = container.find('[data-action="opensearch"]');
+    var input = container.find('[data-region="input"]');
+    var submit = container.find('[data-action="submit"]');
+
+    submit.on('click', function(e) {
+        if (input.val() === '') {
+            e.preventDefault();
+        }
+    });
+    container.on('hidden.bs.collapse', function() {
+        opensearch.removeClass('d-none');
+        input.val('');
+    });
+    container.on('show.bs.collapse', function() {
+        opensearch.addClass('d-none');
+    });
+    container.on('shown.bs.collapse', function() {
+        input.focus();
+    });
+});
+;
+M.util.js_pending('theme_adaptable/showsidebar'); require(['theme_adaptable/showsidebar'], function(amd) {amd.init(); M.util.js_complete('theme_adaptable/showsidebar');});;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","viewallcourses":"View all courses","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+M.util.init_block_hider(Y, {"id":"inst14167","title":"\u041e\u043f\u0438\u0442\u0443\u0432\u0430\u043d\u043d\u044f","preference":"block14167hidden","tooltipVisible":"Hide \u041e\u043f\u0438\u0442\u0443\u0432\u0430\u043d\u043d\u044f block","tooltipHidden":"Show \u041e\u043f\u0438\u0442\u0443\u0432\u0430\u043d\u043d\u044f block"});
+M.util.init_block_hider(Y, {"id":"inst20","title":"Navigation","preference":"block20hidden","tooltipVisible":"Hide Navigation block","tooltipHidden":"Show Navigation block"});
+ M.util.js_pending('random62aa2e0cedda918'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random62aa2e0cedda918'); });
+})();
+//]]>
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DLHJNG1WV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6DLHJNG1WV');
+</script><script type="text/javascript">
+    M.util.js_pending('theme_boost/loader');
+        require(['theme_boost/loader'], function() {
+        M.util.js_complete('theme_boost/loader');
+    });
+</script>
+</body>
+</html>
