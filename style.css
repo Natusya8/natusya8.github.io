@@ -1,11 +1,25 @@
+body{
+    width: 550px;
+    background-image: linear-gradient( blue ,yellow) ;
+}
+
 .navig{
   display: flex;
   margin-top: 15px;
+  justify-content: space-around;
 }
 
 nav a{
   text-decoration:none;
   border:3px solid navy;
   border-radius:10px;
-  padding:5px;
+  padding:8px;
+  background-color: skyblue;
+  color: black;
+  text-align: center ;
+}
+
+nav a:hover{
+    background-color: yellow;
+    color: blue;
 }
