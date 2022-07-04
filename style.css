@@ -23,3 +23,10 @@ nav a:hover{
     background-color: yellow;
     color: blue;
 }
+
+header::before{
+    content: url("https://github.com/Natusya8/natusya8.github.io/blob/main/ehmblema_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-removebg-preview.png");
+    width:  30px;
+    height: 30px;
+    display: block;
+}
