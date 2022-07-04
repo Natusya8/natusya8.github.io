@@ -6,7 +6,7 @@ body{
 .navig{
   display: flex;
   margin: 15px;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
