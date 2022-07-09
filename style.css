@@ -34,3 +34,7 @@ footer{
 head::before{
     url:"ehmblema_removebg-preview-removebg-preview.png";
 }
+
+.emblema{
+    position:absolute;
+}
