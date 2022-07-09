@@ -30,3 +30,7 @@ footer{
     bottom: 5px;
    
 }
+
+head::before{
+    url:"ehmblema_removebg-preview-removebg-preview.png";
+}
