@@ -9,7 +9,7 @@ body{
   justify-content: space-around;
   flex-wrap: wrap;
   position: fixed;
-  top: 80px;
+  top: 100px;
 }
 
 nav a{
@@ -21,7 +21,9 @@ nav a{
   color: black;
   text-align: center ;
 }
-
+main{
+    top:150px;
+}
 nav a:hover{
     background-color: yellow;
     color: blue;
