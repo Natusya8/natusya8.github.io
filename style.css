@@ -8,6 +8,8 @@ body{
   margin: 15px;
   justify-content: space-around;
   flex-wrap: wrap;
+  position: fixed;
+  top: 20px;
 }
 
 nav a{
