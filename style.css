@@ -8,7 +8,7 @@ body{
   margin: 15px;
   justify-content: space-around;
   flex-wrap: wrap;
-  position: absolute;
+  position: fixed;
   top: 80px;
 }
 
@@ -41,4 +41,7 @@ head::before{
     position:absolute;
 }
 
-
+footer{
+    position: fixed;
+    bottom: 0px;
+}
