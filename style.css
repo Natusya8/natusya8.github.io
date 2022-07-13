@@ -38,3 +38,6 @@ head::before{
 .emblema{
     position:absolute;
 }
+
+.emblema:focus{
+    }
